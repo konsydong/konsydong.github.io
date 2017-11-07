@@ -6,12 +6,12 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://konsydong.github.io">
-  <title>再见二逼K</title>
+  <title>DigitalOcean+shadowsocks+ipv6免流校园网免流教程 | 再见二逼K</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="由于这学期开学后校园网限制了校外ipv4流量为10G上限，超过后只能享受1Mbps的带宽，实在是受不了，无意间看到了可以通过支持ipv6的VPS搭建shadowsocks来享受每月1T的流量。如果你是学生肯定首选DigitalOcean(以下简称Do)，因为github有学生优惠包（50刀的券），再通过别人邀请注册，还能拿10刀，总共是60刀~如果你是社会工作人员肯定选支持更便宜的搬瓦工，1年">
 <meta property="og:type" content="article">
-<meta property="og:title" content="再见二逼K">
-<meta property="og:url" content="https://konsydong.github.io/2017/11/07/DigitalOcean+shadowsocks+ipv6免流校园网免流教程/index.html">
+<meta property="og:title" content="DigitalOcean+shadowsocks+ipv6免流校园网免流教程">
+<meta property="og:url" content="https://konsydong.github.io/2017/11/07/DigitalOcean-shadowsocks-ipv6免流校园网免流教程/index.html">
 <meta property="og:site_name" content="再见二逼K">
 <meta property="og:description" content="由于这学期开学后校园网限制了校外ipv4流量为10G上限，超过后只能享受1Mbps的带宽，实在是受不了，无意间看到了可以通过支持ipv6的VPS搭建shadowsocks来享受每月1T的流量。如果你是学生肯定首选DigitalOcean(以下简称Do)，因为github有学生优惠包（50刀的券），再通过别人邀请注册，还能拿10刀，总共是60刀~如果你是社会工作人员肯定选支持更便宜的搬瓦工，1年">
 <meta property="og:image" content="http://img.blog.csdn.net/20171026150028955?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
@@ -34,9 +34,9 @@
 <meta property="og:image" content="http://img.blog.csdn.net/20171027163413502?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20171027163428915?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20171027163529770?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2017-11-07T03:21:26.791Z">
+<meta property="og:updated_time" content="2017-11-07T03:36:08.743Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="再见二逼K">
+<meta name="twitter:title" content="DigitalOcean+shadowsocks+ipv6免流校园网免流教程">
 <meta name="twitter:description" content="由于这学期开学后校园网限制了校外ipv4流量为10G上限，超过后只能享受1Mbps的带宽，实在是受不了，无意间看到了可以通过支持ipv6的VPS搭建shadowsocks来享受每月1T的流量。如果你是学生肯定首选DigitalOcean(以下简称Do)，因为github有学生优惠包（50刀的券），再通过别人邀请注册，还能拿10刀，总共是60刀~如果你是社会工作人员肯定选支持更便宜的搬瓦工，1年">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20171026150028955?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
   
@@ -168,8 +168,23 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-DigitalOcean+shadowsocks+ipv6免流校园网免流教程" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-DigitalOcean-shadowsocks-ipv6免流校园网免流教程" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      DigitalOcean+shadowsocks+ipv6免流校园网免流教程
+    </h1>
+  
+
+        
+        <a href="/2017/11/07/DigitalOcean-shadowsocks-ipv6免流校园网免流教程/" class="archive-article-date">
+  	<time datetime="2017-11-07T03:34:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-07</time>
+</a>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
@@ -292,7 +307,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://konsydong.github.io/2017/11/07/DigitalOcean+shadowsocks+ipv6免流校园网免流教程/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://konsydong.github.io/2017/11/07/DigitalOcean-shadowsocks-ipv6免流校园网免流教程/" alt="微信分享二维码">
     </div>
 </div>
 
