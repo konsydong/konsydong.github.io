@@ -6,18 +6,39 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://konsydong.github.io">
-  <title>Hello World | 再见二逼K</title>
+  <title>再见二逼K</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="由于这学期开学后校园网限制了校外ipv4流量为10G上限，超过后只能享受1Mbps的带宽，实在是受不了，无意间看到了可以通过支持ipv6的VPS搭建shadowsocks来享受每月1T的流量。如果你是学生肯定首选DigitalOcean(以下简称Do)，因为github有学生优惠包（50刀的券），再通过别人邀请注册，还能拿10刀，总共是60刀~如果你是社会工作人员肯定选支持更便宜的搬瓦工，1年">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://konsydong.github.io/2017/09/28/hello-world/index.html">
+<meta property="og:title" content="再见二逼K">
+<meta property="og:url" content="https://konsydong.github.io/2017/11/07/DigitalOcean+shadowsocks+ipv6免流校园网免流教程/index.html">
 <meta property="og:site_name" content="再见二逼K">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-09-28T06:17:58.466Z">
+<meta property="og:description" content="由于这学期开学后校园网限制了校外ipv4流量为10G上限，超过后只能享受1Mbps的带宽，实在是受不了，无意间看到了可以通过支持ipv6的VPS搭建shadowsocks来享受每月1T的流量。如果你是学生肯定首选DigitalOcean(以下简称Do)，因为github有学生优惠包（50刀的券），再通过别人邀请注册，还能拿10刀，总共是60刀~如果你是社会工作人员肯定选支持更便宜的搬瓦工，1年">
+<meta property="og:image" content="http://img.blog.csdn.net/20171026150028955?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171026150204817?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171026150438398?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171026150510807?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171026150630717?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171026151054074?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171026151742338?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171026153733870?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171026153801129?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171026153836773?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171026153433391?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171026153441231?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171026154256301?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171026155651244?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171027162141695?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171027162438122?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171027162545702?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171027163413502?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171027163428915?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20171027163529770?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2017-11-07T03:21:26.791Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="再见二逼K">
+<meta name="twitter:description" content="由于这学期开学后校园网限制了校外ipv4流量为10G上限，超过后只能享受1Mbps的带宽，实在是受不了，无意间看到了可以通过支持ipv6的VPS搭建shadowsocks来享受每月1T的流量。如果你是学生肯定首选DigitalOcean(以下简称Do)，因为github有学生优惠包（50刀的券），再通过别人邀请注册，还能拿10刀，总共是60刀~如果你是社会工作人员肯定选支持更便宜的搬瓦工，1年">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20171026150028955?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
   
     <link rel="alternative" href="/atom.xml" title="再见二逼K" type="application/atom+xml">
   
@@ -147,35 +168,46 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-DigitalOcean+shadowsocks+ipv6免流校园网免流教程" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Hello World
-    </h1>
-  
-
-        
-        <a href="/2017/09/28/hello-world/" class="archive-article-date">
-  	<time datetime="2017-09-28T06:17:58.466Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-28</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>　　由于这学期开学后校园网限制了校外ipv4流量为10G上限，超过后只能享受1Mbps的带宽，实在是受不了，无意间看到了可以通过支持ipv6的VPS搭建shadowsocks来享受每月1T的流量。如果你是学生肯定首选DigitalOcean(以下简称Do)，因为github有学生优惠包（50刀的券），再通过别人邀请注册，还能拿10刀，总共是60刀~如果你是社会工作人员肯定选支持更便宜的搬瓦工，1年20刀，每月500G的科学上网流量 肯定也够用了，而且有一键搭建，更是方便，下面拿 Do 来作教程。<br>　　<br>　　首先说一下费用，一定要先通过别人的邀请链接注册，不然就拿不到10刀的邀请券，然后在搭建完VPS的时候，给客服发个工单，把学生优惠的50刀的券补上（亲测可以，方法下面说明），由于 Do 为了防止一此非法卖号者，对账号有验证措施，在注册后有两种方法可以激活账号：1.通过PayPal充值5刀；2.有支持境外支付的信用卡的话，则可以通过绑定信用卡，这样不用额外花钱（还好我有张支持master card的信用卡，没花一分钱嘻嘻嘻嘻）。完事之后就开始搭建过程。<br>　　<a href="https://m.do.co/c/79fe8e87db67" target="_blank" rel="external">首先是注册Do</a>，点击注册（悄悄的带上了我的邀请码，通过邀请码注册你们还可以多得10刀，注册量多的话我也有能有些好处），这个过程就不细说，按着要求的信息填就好，注册完后就会让你激活账号，就是刚刚说的可以通过PapPal充值5刀或者绑定信用卡<br>　　<img src="http://img.blog.csdn.net/20171026150028955?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>　<br>　　在激活完Do后进到如下页面，点击Create Droplet<br>　　<img src="http://img.blog.csdn.net/20171026150204817?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>　　我个人选的是CentOS 6.9 ，因为最便宜的套餐是一个月5刀（1T流量 已经够用了，也可根据自身情况调整），节点肯定是选San Francisco，一致好评延迟低~想要用校园网免流的记得一定要勾上ipv6，这样方便之后设置，不用再配置，系统最好是跟我选一样，因为以下都是在CentOS6.9下执行的，虽然选其它的也可以，但是细节配置命令会不一样。<br>　　<img src="http://img.blog.csdn.net/20171026150438398?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>　　等一段时间系统会给你分配好服务器，这个时候你会收到一封邮件，告诉你登录账号为root和一长串随机密码<br>　　<img src="http://img.blog.csdn.net/20171026150510807?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>　　点击进入如下界面，这里的ipv4地址可作为手机和电脑的上外面的网用，想要用ipv6免流的可以用ipv6地址。<br>　　<img src="http://img.blog.csdn.net/20171026150630717?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>　　接下来就是配置服务器了，可以选择点击上图中的Console（网页版的控制台来配置），但是我更喜欢用<a href="http://pan.baidu.com/s/1dENyYsx" target="_blank" rel="external">putty</a>，百度云下载，在Host Name填刚刚那个ipv4地址，然后点Open进入。<br>　　<img src="http://img.blog.csdn.net/20171026151054074?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>　　然后是重设密码，在你Create完时给你发的邮件已经告诉你账号为root和一长串密码了，首先登录是输一次那个特别长的密码，然后改密码提示你输入(current) UNIX password时还要输一次那个特别长的密码，然后再设新的密码重复输入两次确认，密码不要太简单，不然就会出现下图中那样的提示。（忘记密码了可以在Access中Reset password）<br>　　<img src="http://img.blog.csdn.net/20171026151742338?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<h2 id="ShadowSocks服务器端配置"><a href="#ShadowSocks服务器端配置" class="headerlink" title="ShadowSocks服务器端配置"></a><strong>ShadowSocks服务器端配置</strong></h2><p>接下来是重点了，首先是安装：</p>
+<p><strong>Debian / Ubuntu:</strong></p>
+<blockquote>
+<p>apt-get install python-pip<br>pip install shadowsocks</p>
+</blockquote>
+<p><strong>CentOS:</strong></p>
+<blockquote>
+<p>yum install python-setuptools &amp;&amp; easy_install pip<br>pip install shadowsocks<br>如果提示pip安装失败，可以用以下办法</p>
+<ol>
+<li>下载文件<br>wget <a href="https://bootstrap.pypa.io/get-pip.py" target="_blank" rel="external">https://bootstrap.pypa.io/get-pip.py</a> –no-check-certificate</li>
+<li>执行安装<br>python get-pip.py<br>　　<img src="http://img.blog.csdn.net/20171026153733870?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>　　<img src="http://img.blog.csdn.net/20171026153801129?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></li>
+</ol>
+</blockquote>
+<p>　　然后在/etc/目录下创建一个shadowsocks.json文件，用来记录服务器端的配置信息，格式如下：<br><img src="http://img.blog.csdn.net/20171026153836773?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;server&quot;:&quot;my_server_ip&quot;,</div><div class="line">    &quot;server_port&quot;:8388,</div><div class="line">    &quot;local_address&quot;: &quot;127.0.0.1&quot;,</div><div class="line">    &quot;local_port&quot;:1080,</div><div class="line">    &quot;password&quot;:&quot;mypassword&quot;,</div><div class="line">    &quot;timeout&quot;:300,</div><div class="line">    &quot;method&quot;:&quot;aes-256-cfb&quot;”,</div><div class="line">    &quot;fast_open&quot;: false</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>解释下几个字段：<br><strong>server</strong>填写你购买的服务器的ip地址（v4/v6），在Do管理界面可以看到，这里也可以写成“server”:”::”，这样可以同时监听v4和v6（推荐用这种啦，想用ipv6免流的就可以用这种）。<br><strong>server_port</strong>：监听的端口，保证端口不被占用即可（8388，9001什么的随意设）。<br><strong>password</strong>：你自己设一个常用的就好<br><strong>local_address</strong>：本地的地址（就写127.0.0.1）。<br><strong>local_port</strong>：本地执行时的端口，主要用于客户端情况（只要这个商品本地没被占用，比如1080，1089也是随意设，只要本地没占用这个端口）。<br><strong>method</strong>:加密方式，这里使用的是aes-256-cfb，也有其他的选项，这个很随意，只要和本地配对就好。</p>
+<p>设置完之后，我们可以用以下指令。<br>插个楼，得来个 GooGle 的TCP BBr网络加速脚本，来提升整个网速，效果还是比较明显的。执行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget --no-check-certificate https://github.com/konsydong/GooGle-BBR/raw/master/BBR.sh &amp;&amp; sh BBR.sh</div></pre></td></tr></table></figure>
+<p>两个都选y就行，完了之后putty会断，因为服务器重启了，重新登录putty连接一下就好。<br><img src="http://img.blog.csdn.net/20171026153433391?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20171026153441231?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>等重启putty重新连接后<br>在后台<strong>打开shadowsocks服务</strong>，输入以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssserver -c /etc/shadowsocks.json -d start</div></pre></td></tr></table></figure>
+<p>下面的命令是关闭shadowsocks服务（闲话闲话~其实这个命令可以<strong>不用看啦</strong>，上面的打开了就好了）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssserver -c /etc/shadowsocks.json -d stop</div></pre></td></tr></table></figure>
+<p>至此服务器端就配置结束了。</p>
+<h2 id="ShadowSocks客户端配置"><a href="#ShadowSocks客户端配置" class="headerlink" title="ShadowSocks客户端配置"></a><strong>ShadowSocks客户端配置</strong></h2><p>　　ShadowSocks客户端支持多种平台，这里介绍windows和ios。</p>
+<p>##1.首先说ios<br>　　由于国内下架了，所以只能用港区或者美区的app store下载Wingy或者Potatso支持shadowsocks的软件 ，官方的shadowsocks好像是在2年前因为什么什么污染从app store下架了，以下以Wingy作介绍~<br><strong>服务器</strong>：手机端就填Do管理从而的ipv4地址<br><strong>端口</strong>：你自己设的server_port,比如我设的是8388比如<br><strong>密码</strong>：是你自己设的<br><strong>代理模式</strong>：全局代理就是所有流量都走ss，自动代理就只是屏蔽的部分走ss，这个看个人爱好，都可以。<br><strong>加密方式</strong>：就是刚刚那个method，选成一样的<br>　　然后点击保存，这个时候你会发现你手机已经能上google,youtube,twitter,facebook等等了。如果你选的是全局代理，那么百度ip会显示你的ip在美国，ip就是你Do服务器的ipv4地址。</p>
+<p><img src="http://img.blog.csdn.net/20171026154256301?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>##2.再说windows客户端<br><a href="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank" rel="external">官方原版shadowsocks客户端</a>，不同的版本需要不用的.NET支持，因为我一直有在用 Visual Studio 开发，所以不需要额外下载。<br>我因为偷懒，没有用官方的，用的是<a href="http://d.6plat.org/6Plat-64-win.zip" target="_blank" rel="external">6plat平台下载的版本</a><br><strong>服务器IP</strong>：但是同样的，如果只为上外面的网站，设为Do的ipv4地址，如果既想用ipv6免流量又想上外面的网站的同学可以用ipv6地址<br><strong>服务器端口</strong>：设置为<strong>server_port</strong><br><strong>密码</strong>：就是自己设的<br><strong>加密</strong>：就是刚刚那个<strong>method</strong><br><strong>备注</strong>：随意写，方便自己区分<br><strong>代理端口</strong>：就是刚刚设的<strong>local_port</strong><br><img src="http://img.blog.csdn.net/20171026155651244?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>设置完以上后，右键shadowsocks,将服务器选择为你刚刚自己配好的，系统代理模式为全局代理（ipv4地址的同学可以选择PAC模式，ipv6的想免流并且翻墙的可以选择全局代理），并且启用系统代理（前面的勾 勾上就好）。<br>这个时候如果是用全局代理的 百度ip也会显示地址在美国，ip地址是Do的ipv4地址。</p>
+<h2 id="最后再说说github学生包"><a href="#最后再说说github学生包" class="headerlink" title="最后再说说github学生包"></a><strong>最后再说说github学生包</strong></h2><p>　　因为前面的配置是必须的，而且不用怎么等待，而github学生包的申请和给Do验证50刀的优惠券都是要等待的，所以放到最后。<br>　　首先进行<a href="https://education.github.com/" target="_blank" rel="external">github教育优惠的网站</a>，然后点 Get the pack,申请的时候要验证学生身份，可以用教育邮箱或者学生证照片，虽说两个都可以，但是好多人没有教育邮箱，用学生证照片也是可以的，这个大概几小时内或者第二天基本就能收到，在申请的时候，你就说你想用穿上学生包来更好地学习，夸一个github怎么怎么好就行了，很有用，基本不会拒你，然后你可以在这里找到Do的50刀优惠券。<br>　　<img src="http://img.blog.csdn.net/20171027162141695?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>　　完事之后，那就是去验证这个50刀的优惠券，点击Settings<br>　　<img src="http://img.blog.csdn.net/20171027162438122?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>　　在Billing中你会看到Promo code,但是是这个时候是验证不了50刀券的，因为在注册时获得的10刀优惠券也算Promo code,但是Do默认一个账号只能进行一次Promo code验证。但是不要担心，对于学生优惠，可以给客服发工单解决，亲测可以~<br>　　<img src="http://img.blog.csdn.net/20171027162545702?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>　　现在进到Do的主页，点击Support<br>　　<img src="http://img.blog.csdn.net/20171027163413502?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>　　然后拉到最下面,点击Contact Support<br>　　<img src="http://img.blog.csdn.net/20171027163428915?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>　　然后选Account,然后你就在这个工单里说明，你是学生，但是用不了那个学生优惠的Promo code，并附上那个优惠码，然后还是老样子，夸一下DigitalOcean，基本客服看到了就会把50刀的券给你加上~<br>　　<img src="http://img.blog.csdn.net/20171027163529770?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvc2luYXRfMzYwNTM3NTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>　　至此，所有的配置和羊毛都已经搞定~。</p>
+<h2 id="再说说ipv6免流"><a href="#再说说ipv6免流" class="headerlink" title="再说说ipv6免流"></a><strong>再说说ipv6免流</strong></h2><p>有两种方法</p>
+<ol>
+<li>在电脑端的ss的ip地址配成Do的ipv6的地址，并且开启全局代理，这个时候需要借助Proxifier这个软件才能让所有的软件都走这个ss，这样其实比较麻烦，不推荐。</li>
+<li>搞一个支持ipv6的路由器，0元购的斐讯K2(真的不是广告，只是为了不花一分钱)真的够用，配置一个ss，就可以享受wifi全局免流。<br>　　网速大概除了晚上19：00-23：00高峰期只有3、4Mbps，其余时间都有10Mbps，早上和23：00之后 基本有20Mbps以上的带宽，还是很够用的~</li>
+</ol>
+<p>　　</p>
 
       
 
@@ -260,7 +292,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://konsydong.github.io/2017/09/28/hello-world/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://konsydong.github.io/2017/11/07/DigitalOcean+shadowsocks+ipv6免流校园网免流教程/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -274,15 +306,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/11/07/DigitalOcean+shadowsocks+ipv6免流校园网免流教程/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
+    <a href="/2017/09/28/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
